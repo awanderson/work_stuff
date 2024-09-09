@@ -3,14 +3,18 @@
 
         <a id='open-booking' href="http://booking.com">Open booking</a>
         <h1>New line</h1>
-        <a href="http://expedia.com">Open expedia</a>
+        <a id='open-expedia' href="http://expedia.com">Open expedia</a>
         <script>
         console.log('hello world')
         // window.location.replace("http://booking.com")
         // window.location.href = "http://expedia.com"
 
-		document.addEventListener('DOMContentLoaded', function() {
-     	   document.getElementById('open-booking').click();
-    	});
+	window.onload = function() {
+		document.getElementById('open-expedia').click();
+	};
+
+		// document.addEventListener('DOMContentLoaded', function() {
+  //    	   document.getElementById('open-booking').click();
+  //   	});
 </script>
 </html>
